@@ -8,7 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: PHPUnit tests
-        uses: php-actions/phpunit@v9
-        with:
-          php_extensions: FFI
+      - uses: php-actions/composer@dynamic-docker
+      - name: PHPUnit Tests
+          uses: php-actions/phpunit@dynamic-docker
+          with:
+            bootstrap: vendor/autoload.php
