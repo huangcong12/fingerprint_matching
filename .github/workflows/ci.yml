@@ -37,4 +37,4 @@ jobs:
         run: "composer install --no-interaction --no-progress --no-suggest"
 
       - name: "Run tests with phpunit/phpunit"
-        run: "ls;pwd;vendor/bin/phpunit tests"
+        run: "ls;pwd;ls vendor;vendor/bin/phpunit tests"
