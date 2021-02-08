@@ -53,7 +53,7 @@ $driver = FingerPrintServer::instance()->loadDriver(DriverNameServer::FGTIT);
 $driver->comparedMany("{$code}", "{$codeArr}");
 ```
 
-## 高级方式
+## 高级用法
 
 ### 严格模式
 
