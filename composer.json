@@ -1,6 +1,8 @@
 {
   "name": "akong/fingerprint_matching",
   "description": "指纹比对服务（Fingerprint matching）",
+  "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "akong",

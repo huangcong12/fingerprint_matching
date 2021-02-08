@@ -2,6 +2,9 @@
 
 原理是通过 PHP7.4 的 FFI 功能调用 .so 包提供的比对方法。
 
+[![License](https://poser.pugx.org/w7corp/easywechat/license)](https://packagist.org/packages/w7corp/easywechat)
+
+
 # 支持的设备厂家
 
 - [菲格特（FGTIT）](http://www.fgtit.com/PC/demo-server.html)
@@ -9,11 +12,14 @@
 如果别家产品有提供 .so 文件，也可以参考此包实现比对功能。
 
 # 安装
+## 要求
+- PHP >= 7.4
+- FFI 扩展，且 `ffi.enable=true`
 
-基于 composer 安装
+## 基于 composer 安装
 
 ```
-php composer.phar require akong/fingerprint_matching
+composer require akong/fingerprint_matching
 ```
 
 # 使用
@@ -34,14 +40,13 @@ $driver->comparedOne("{$code1}", "{$code2}");
 ```
 $driver = FingerPrintServer::instance()->loadDriver(\Akong\FingerprintMatching\DriverNameServer::FGTIT)
 $driver->comparedMany("{$code1}", "{$codeArr}");
-
 ```
 
 ## 高级方式
 
 ### 严格模式
 
-将通过比分改为 80 分，默认是一般模式 60 分。
+将通过比分调整为 80 分，默认是`一般模式` 60 分。
 
 ```
 $driver->setUpSafeMode();
