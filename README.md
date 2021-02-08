@@ -31,17 +31,26 @@ composer require akong/fingerprint_matching
 ### 1 对 1 比对
 比对成功返回：`true`，否则 `false`
 
-```
-$driver = FingerPrintServer::instance()->loadDriver(\Akong\FingerprintMatching\DriverNameServer::FGTIT)
+```php
+<?php
+use Akong\FingerprintMatching\FingerPrintServer;
+use Akong\FingerprintMatching\DriverNameServer;
+
+$driver = FingerPrintServer::instance()->loadDriver(DriverNameServer::FGTIT);
+
 $driver->comparedOne("{$code1}", "{$code2}");
 ```
 
 ### 1 对 N 比对
 返回匹配的数组 `key`
 
-```
-$driver = FingerPrintServer::instance()->loadDriver(\Akong\FingerprintMatching\DriverNameServer::FGTIT)
-$driver->comparedMany("{$code1}", "{$codeArr}");
+```php
+<?php
+use Akong\FingerprintMatching\FingerPrintServer;
+use Akong\FingerprintMatching\DriverNameServer;
+
+$driver = FingerPrintServer::instance()->loadDriver(DriverNameServer::FGTIT);
+$driver->comparedMany("{$code}", "{$codeArr}");
 ```
 
 ## 高级方式
@@ -50,14 +59,20 @@ $driver->comparedMany("{$code1}", "{$codeArr}");
 
 将通过比分调整为 80 分，默认是`一般模式` 60 分。
 
-```
+```php
+<?php
+...
 $driver->setUpSafeMode();
+...
 ```
 
 ### 自定义通过比分
 
 如果`一般模式（60）`和`严格模式（80）`不满足，可单独设置通过分数
 
-```
-$driver->setScope("{通过分数}")；
+```php
+<?php
+...
+$driver->setScope("{通过分数}");
+...
 ```
