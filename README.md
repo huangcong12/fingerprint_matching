@@ -2,6 +2,7 @@
 
 原理是通过 PHP7.4 的 FFI 功能调用 .so 包提供的比对方法。
 
+[![CI Test Status](https://github.com/huangcong12/fingerprint_matching/workflows/CI/badge.svg)](//packagist.org/packages/akong/fingerprint_matching) 
 [![Latest Stable Version](https://poser.pugx.org/akong/fingerprint_matching/v)](//packagist.org/packages/akong/fingerprint_matching) 
 [![Total Downloads](https://poser.pugx.org/akong/fingerprint_matching/downloads)](//packagist.org/packages/akong/fingerprint_matching) 
 [![Latest Unstable Version](https://poser.pugx.org/akong/fingerprint_matching/v/unstable)](//packagist.org/packages/akong/fingerprint_matching) 
