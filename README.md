@@ -10,7 +10,7 @@
 
 # 支持的设备厂家
 
-- [菲格特（FGTIT）](http://www.fgtit.com/PC/demo-server.html)
+- [星高科技（FGTIT）](http://www.fgtit.com/PC/demo-server.html)
 
 如果别家产品有提供 .so 文件，也可以参考此包实现比对功能。
 
