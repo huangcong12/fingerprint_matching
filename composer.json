@@ -3,6 +3,7 @@
   "description": "指纹比对服务（Fingerprint matching）",
   "type": "library",
   "license": "MIT",
+  "minimum-stability": "main",
   "authors": [
     {
       "name": "akong",
