@@ -37,4 +37,4 @@ jobs:
         run: "composer install --no-interaction --no-progress --no-suggest"
 
       - name: "Run tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit"
+        run: "vendor/bin/phpunit akong/fingerprint_matching/tests/"
