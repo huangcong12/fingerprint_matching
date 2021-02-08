@@ -1,9 +1,9 @@
 <?php
 
-namespace Akong\FingerprintMatching\Fgtit;
+namespace FingerprintMatching\Fgtit;
 
 
-use Akong\FingerprintMatching\DriverInterface;
+use FingerprintMatching\DriverInterface;
 
 /**
  * FGTIT 指纹比对驱动

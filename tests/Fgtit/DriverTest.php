@@ -1,8 +1,8 @@
 <?php
 
-namespace Akong\FingerprintMatching\Tests\Fgtit;
+namespace FingerprintMatching\Tests\Fgtit;
 
-use Akong\FingerprintMatching\Fgtit\Driver;
+use FingerprintMatching\Fgtit\Driver;
 use PHPUnit\Framework\TestCase;
 
 class DriverTest extends TestCase

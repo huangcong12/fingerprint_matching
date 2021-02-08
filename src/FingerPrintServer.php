@@ -1,6 +1,6 @@
 <?php
 
-namespace Akong\FingerprintMatching;
+namespace FingerprintMatching;
 
 /**
  * 指纹操作服务类

@@ -1,10 +1,10 @@
 <?php
 
-namespace Akong\FingerprintMatching\Tests;
+namespace FingerprintMatching\Tests;
 
-use Akong\FingerprintMatching\DriverNameServer;
-use Akong\FingerprintMatching\Fgtit\Driver;
-use Akong\FingerprintMatching\FingerPrintServer;
+use FingerprintMatching\DriverNameServer;
+use FingerprintMatching\Fgtit\Driver;
+use FingerprintMatching\FingerPrintServer;
 
 class FingerPrintServerTest extends \PHPUnit\Framework\TestCase
 {

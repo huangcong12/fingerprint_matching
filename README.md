@@ -33,8 +33,8 @@ composer require akong/fingerprint_matching
 
 ```php
 <?php
-use Akong\FingerprintMatching\FingerPrintServer;
-use Akong\FingerprintMatching\DriverNameServer;
+use FingerprintMatching\FingerPrintServer;
+use FingerprintMatching\DriverNameServer;
 
 $driver = FingerPrintServer::instance()->loadDriver(DriverNameServer::FGTIT);
 
@@ -46,8 +46,8 @@ $driver->comparedOne("{$code1}", "{$code2}");
 
 ```php
 <?php
-use Akong\FingerprintMatching\FingerPrintServer;
-use Akong\FingerprintMatching\DriverNameServer;
+use FingerprintMatching\FingerPrintServer;
+use FingerprintMatching\DriverNameServer;
 
 $driver = FingerPrintServer::instance()->loadDriver(DriverNameServer::FGTIT);
 $driver->comparedMany("{$code}", "{$codeArr}");

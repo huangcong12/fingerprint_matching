@@ -1,6 +1,6 @@
 <?php
 
-namespace Akong\FingerprintMatching;
+namespace FingerprintMatching;
 
 interface DriverInterface
 {

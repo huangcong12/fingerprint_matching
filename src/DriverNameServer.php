@@ -1,13 +1,13 @@
 <?php
 
-namespace Akong\FingerprintMatching;
+namespace FingerprintMatching;
 
 
 /**
  * 设备厂家名
  *
  * Class FingerPrintDriverName
- * @package akong\fingerprint_matching
+ * @package fingerprint_matching
  */
 class DriverNameServer
 {
