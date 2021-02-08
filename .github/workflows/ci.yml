@@ -8,8 +8,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: php-actions/composer@dynamic-docker
+
       - name: PHPUnit Tests
-          uses: php-actions/phpunit@dynamic-docker
-          with:
-            bootstrap: vendor/autoload.php
+        uses: php-actions/phpunit@dynamic-docker
+        with:
+          bootstrap: vendor/autoload.php
+          args: --coverage-text
